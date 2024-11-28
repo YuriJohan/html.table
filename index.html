@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Título da Página</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <!-- Arquivo CSS externo -->
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1>Cabeçalho da Página</h1>
+                <div id="esquerda">
+                    <h1>Empresa XYZ</h1>
+                </div>
+                <div id="direita">
+                    <img src="img/faculdade.png" alt="Imagem da faculdade">
+                </div>
+
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tabela.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <section>
+                    <h2>Fale Conosco</h2>
+                 <form action="#" method="post" id="form" name="form">
+                 <label for="txtname"></label>
+                 <input type="text" name="textname" id="textname"
+                 placeholder="Digite seu nome aqui"required>
+
+                 <label for="txtemail"></label>
+                 <input type="email" name="txtemail" id="txtemail"
+                 placeholder="Digite seu email aqui"required>
+
+                 <label for="txtdata"> Data de Nascimento</label>
+                 <input type="date" name="txtdata" id="txtdata">
+                 
+
+                 <label for="txtsalario"></label>
+                 <input type="number" name="txtsalario" id="txtsalario"
+                 placeholder="Digite seu salario aqui" step="0,5">
+
+                 <label for="estado">Estado</label>
+                 <select name="estado" id="estado" required>
+                    <option disabled selected="Escolha seu estado">
+                        Escolha seu estado</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="outro">Outro</option>
+                 </select>
+                 <label>Estado Civil</label>
+                 <div class="gruporadio">
+                    <label for="Solteiro">
+                        <input type="radio" name="Estadocivil"
+                        id="Solteiro" value="Solteiro"required>
+                        Solteiro
+                    </label><br>
+                    <label for="Casado">
+                        <input type="radio" name="Estadocivil"
+                        id="Casado" value="Casado"required>
+                        Casado
+                        </label><br>
+                        <label for="Outro">
+                            <input type="radio" name="Estadocivil"
+                            id="Outro" value="Outro"required>
+                            Outro
+                            </label>
+                 </div>
+                 <div class="grupocheck">
+                    <label for="termos">
+                        <input type="checkbox" name="termos" id="termos">
+                        Aceito os termose condições
+                    </label>
+                 </div>
+                 <label for="comentario">comentario</label>
+                 <textarea name="comentario" id="comentario" rows="3" placeholder="insira seu comentario"></textarea>
+                 <button type="submit">Enviar</button>
+                 </form>
+                </section>
+            </main>
+        <footer>
+            <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+        </footer>
+
+        <script src="script.js"></script> <!-- Arquivo JavaScript externo -->
+    </body>
+</html>
